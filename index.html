@@ -17,12 +17,12 @@
   </head>
   <body class="">
     <div
-      class=" bg-black flex flex-col lg:flex-row justify-center lg:space-x-40 px-[10px] h-[80px] lg:items-end pt-[80px]"
+      class="bg-black flex flex-col basic:flex-row justify-center basic:space-x-40 px-[10px] h-[80px] basic:items-end pt-[80px]"
     >
       <div class="flex justify-center">
         <img src="./img/technical.png" alt="" class="h-[50px] w-auto" />
       </div>
-      <div class="flex z-10 justify-around lg:space-x-40">
+      <div class="flex z-10 justify-around basic:space-x-40">
         <div class="">
           <img src="./img/team.png" alt="" class="h-[48px] w-auto" />
         </div>
@@ -33,13 +33,13 @@
     </div>
     <!-- Swiper -->
     <section
-      class="z-0 swiper mySwiper bg-black flex items-start h-[300px] lg:h-[400px] w-auto"
+      class="z-0 swiper mySwiper bg-black flex items-start h-[300px] basic:h-[400px] w-auto"
     >
       <div class="swiper-wrapper">
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 5.jpg"
@@ -56,7 +56,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 6.jpg"
@@ -73,7 +73,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 7.jpg"
@@ -90,7 +90,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo.jpg"
@@ -107,7 +107,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 2.jpg"
@@ -124,7 +124,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 3.jpg"
@@ -141,7 +141,7 @@
         <div class="flex justify-center items-center h-full swiper-slide">
           <div class="flex flex-col space-y-2">
             <div
-              class="w-[100px] lg:w-[200px] lg:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
+              class="w-[100px] basic:w-[200px] basic:h-[200px] h-[100px] p-[3px] bg-gray-600 rounded-[50%]"
             >
               <img
                 src="./img/people photo 4.jpg"
@@ -155,7 +155,6 @@
             </div>
           </div>
         </div>
-        
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -163,48 +162,47 @@
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-      if (screen.width >= 760){
+      if (screen.width >= 760) {
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: -40,
-            slidesPerGroup: 3,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-          }else{
-          var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: -40,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            autoplay: {
-              delay: 5000,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-          }
-      
+          slidesPerView: 3,
+          spaceBetween: -40,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      } else {
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 2,
+          spaceBetween: -40,
+          slidesPerGroup: 2,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      }
     </script>
     <script type="module" src="./src/main.js"></script>
   </body>
