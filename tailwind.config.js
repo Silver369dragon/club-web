@@ -9,9 +9,6 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      basic: "1440px",
-    },
     extend: {},
   },
   plugins: [],
